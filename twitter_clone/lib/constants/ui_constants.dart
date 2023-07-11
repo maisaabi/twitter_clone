@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../theme/theme.dart';
 import 'package:twitter_clone/features/explore/view/explore_view.dart';
 import 'package:twitter_clone/features/notifications/views/notification_view.dart';
 import 'package:twitter_clone/features/tweet/widgets/tweet_list.dart';
+import '../theme/theme.dart';
 import 'constants.dart';
 
 class UIConstants {
@@ -16,10 +16,10 @@ class UIConstants {
       centerTitle: true,
     );
   }
-static const List<Widget> bottomTabPages = [
-  TweetList(),
-  ExploreView(),
-  NotificationView(),
-];
 
+  static const List<Widget> bottomTabBarPages = [
+    TweetList(),
+    ExploreView(),
+    NotificationView(),
+  ];
 }

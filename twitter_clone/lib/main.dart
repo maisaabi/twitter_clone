@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'features/auth/view/login_view.dart';
-import 'features/auth/view/sigup_view.dart';
+import 'features/auth/view/signup_view.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'theme/app_theme.dart';
 import 'package:twitter_clone/theme/theme.dart';

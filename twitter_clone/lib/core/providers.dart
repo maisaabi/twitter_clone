@@ -6,14 +6,17 @@ final appwriteClientProvider = Provider((ref) {
   Client client = Client();
   return client
       .setEndpoint(AppwriteConstants.endPoint)
-      .setProject(AppwriteConstants.projectId);
-  //.setSelfSigned(true); //if appwrite installed in localhost
-});
+      .setProject(AppwriteConstants.projectId)
+      .setSelfSigned(status: true);
+  },
+);
 
 final appwriteAccountProvider = Provider((ref) {
   final client = ref.watch(appwriteClientProvider);
   return Account(client);
-});
+  },
+);
+
 final appwriteDatabaseProvider = Provider((ref) {
   final client = ref.watch(appwriteClientProvider);
   return Databases(client);
